@@ -15,26 +15,52 @@
   font-style: normal;
 }
 
-
-/* nav style */
-nav{
-    margin: 95px 120px;
+header{
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-/* banner style */
-.banner{
+/* nav style */
+
+.banner-logo{
+  font-size: 24px;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 95px 120px;
 }
 
-/* h4{
-  font-size: 52px;
+.nav-container{
+  display: flex;
+  gap: 20px;
 }
-p{
-  font-size: 16px;
-} */
+
+
+
+
+/* banner style */
+.banner-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 95px 120px;
+}
+
+.banner{
+  text-align: left;
+  max-width: 500px;
+}
+
+.banner-title{
+  font-size: 3.25rem;
+}
 
 .banner-pic{
   background-image: url(./images/Circle\ design.svg); 
+  max-width: 400px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -45,9 +71,51 @@ p{
 }
 
 /* sponsor style */
-.sponsor-logo{
+.logo-container{
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: repeat(7, 120px);
+  justify-content: space-between;
   margin: 95px 120px;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent, rgb(215, 210, 210), transparent) 1;
   padding: 20px;
+}
+
+
+/* responsive style */
+@media screen and (max-width: 576px) {
+ .nav-bar,
+ .nav-container,
+ .banner-container{
+  flex-direction: column;
+  text-align: center;  
+ }
+ .nav-bar{
+  margin-top: 30px;
+ }
+ .banner-logo{
+  font-size: 1rem;
+  margin-bottom: 30px;
+ }
+ .banner-title{
+  font-size: 1.75rem;  
+  }
+  .banner-description{
+    font-size: 14px;
+  }
+  .banner{
+    margin-bottom: 20px;
+  }
+  .banner-pic{
+    width: 100%;
+  }
+  .logo-container{
+    max-width: 275px;
+    grid-template-columns: repeat(4, 55px);
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+  }
 }
