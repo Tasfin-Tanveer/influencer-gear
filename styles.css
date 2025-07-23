@@ -17,12 +17,12 @@
 
 main{
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 header{
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 /* nav style */
@@ -78,7 +78,7 @@ header{
 /* sponsor style */
 .logo-container{
   max-width: 1110px;
-  margin: 0 auto;
+  margin: 0px auto;
   display: grid;
   grid-template-columns: repeat(7, 120px);
   justify-content: space-between;
@@ -166,6 +166,35 @@ header{
   margin-top: 20px;
 }
 
+/* footer style */
+.footer{
+  max-width: 1440px;
+  margin: 0px auto;
+  justify-items: center;
+  text-align: center;
+  margin-top: 85px;
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer h3{
+  font-size: 1.5rem;
+  color: white;
+}
+
+.footer p{  
+  margin-top: 10px;
+}
+
+.footer-icon{
+  filter: invert(1);
+  display: flex;
+  gap: 20px;
+  width: 200px;
+  margin-top: 20px;
+}
+
 /* responsive style */
 @media screen and (max-width: 576px) {
  .nav-bar,
@@ -181,6 +210,7 @@ header{
  }
  .nav-bar{
   margin-top: 30px;
+
  }
  .banner-logo{
   font-size: 1rem;
