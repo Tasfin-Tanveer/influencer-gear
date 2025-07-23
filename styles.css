@@ -77,12 +77,13 @@ header{
 
 /* sponsor style */
 .logo-container{
-  max-width: 1110px;
-  margin: 0px auto;
+  max-width: 1050px;
   display: grid;
   grid-template-columns: repeat(7, 120px);
   justify-content: space-between;
-  margin: 95px 120px;
+  align-items: center;
+  margin-left: 150px;
+  margin-bottom: 80px;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent, rgb(215, 210, 210), transparent) 1;
   padding: 20px;
@@ -92,7 +93,7 @@ header{
 
 
 .card-container{
-  max-width: 1050px;
+  max-width: 1150px;
   margin-left: 50px;
 }
 
@@ -139,7 +140,7 @@ header{
 }
 
 .stars-front {
-  color: gold;
+  color: orange;
   position: absolute;
   top: 0;
   left: 0;
@@ -198,11 +199,11 @@ header{
 /* responsive style */
 @media screen and (max-width: 576px) {
  .nav-bar,
- .nav-container,
- .banner-container{
+ .nav-container{
   flex-direction: column;
   text-align: center;  
  }
+ .banner-container,
  .feature{
   flex-direction: column-reverse;
   text-align: center;
@@ -233,13 +234,9 @@ header{
     width: 100%;
   }
   .logo-container{
-    max-width: 275px;
+    max-width: 375px;
     grid-template-columns: repeat(4, 55px);
-    margin: 50px auto;
-    /* margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px; */
-    align-content: center;
+    margin: 50px auto;  
   }
 
   .card-container{
